@@ -1,17 +1,17 @@
 import React from "react";
 
-import { bubbleSort } from "./algorithms/bubbleSort.js";
-import { insertionSort } from "./algorithms/insertionSort.js";
-import { selectionSort } from "./algorithms/selectionSort.js";
-import { mergeSort } from "./algorithms/mergeSort.js";
-import { quickSort } from "./algorithms/quickSort.js";
-import { heapSort } from "./algorithms/heapSort.js";
+import { bubbleSort } from "../utils/algorithms/bubbleSort.js";
+import { insertionSort } from "../utils/algorithms/insertionSort.js";
+import { selectionSort } from "../utils/algorithms/selectionSort.js";
+import { mergeSort } from "../utils/algorithms/mergeSort.js";
+import { quickSort } from "../utils/algorithms/quickSort.js";
+import { heapSort } from "../utils/algorithms/heapSort.js";
 
 import Navbar from "./navbar";
 import Frame from "./frame";
 
-import pause from "./helper/pause";
-import generator from "./helper/generator";
+import pause from "../utils/pause.js";
+import generator from "../utils/generator.js";
 import {
   ALGORITHM,
   SPEED,
@@ -20,8 +20,8 @@ import {
   CURRENT,
   NORMAL,
   DONE,
-} from "./helper/constants";
-import { getKeysCopy } from "./helper/keys.js";
+} from "../utils/constants.js";
+import { getKeysCopy } from "../utils/keys.js";
 
 class Visualizer extends React.Component {
   state = {
